@@ -8,6 +8,7 @@ typedef struct MyThread
 	struct MyThread *blockedWith;
 	struct MyThread *parent;
 	struct Queue *children;
+	int joinAll;
 }_MyThread;
 
 typedef struct QueueNode 
