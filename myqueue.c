@@ -44,8 +44,8 @@ _MyThread *dequeue(_Queue *q)
 		{
 			q->front = q->front->next;
 		}
-		free(tempNode);		
 		tempNode = NULL;
+		free(tempNode);		
 		return(frontThread);
 	}
 }
@@ -100,8 +100,7 @@ int removeFromQueue(_Queue *q, _MyThread *thread)
 	}
 	else
 		prevNode->next = tempNode->next;
-	free(tempNode);
 	tempNode = NULL;
+	free(tempNode);
 	return 1;
 }
-
